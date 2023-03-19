@@ -5,11 +5,13 @@ V 1.2 Updates:
 - Splash Fragment Added
 - Image added to home page
 
-
 Introduction
 ------------
 
 This app aims to log exercises based categorized by there split day/muscle group.
+- Utilizes SQL queries to store exercises and their information in the Room database.
+- Navaigation component for moving between fragments and setting arguments based on the desired split day.
+- ViewModel implementation with LiveData componentsto make changes to data that will be passed to the fragments.
 
 Thoughts
 --------
@@ -30,7 +32,7 @@ TO-DO List
 
 - Fix splash fragment layout
 - fix the navigation up from main menu to splash fragment
-- Add transitions.
-- Add updatable date tags.
+- Add transitions
+- Add updatable date tags
 - Add notes function
-- Implement unit and instrument tests.
+- Implement unit and instrument tests
