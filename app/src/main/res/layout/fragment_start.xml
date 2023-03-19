@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StartFragment">
+
+    <data>
+        <variable
+            name="startFragment"
+            type="com.example.workoutlog.fragments.StartFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:text="@string/pick_a_muscle_group"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/material_on_background_emphasis_medium" />
+
+            <Button
+                android:id="@+id/back_day_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:text="@string/back_day"
+                android:onClick="@{() -> startFragment.goToMuscleGroup(@string/back_day)}"/>
+
+            <Button
+                android:id="@+id/chest_day_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/chest_day"
+                android:layout_marginBottom="10dp"
+                android:onClick="@{() -> startFragment.goToMuscleGroup(@string/chest_day)}"/>
+
+            <Button
+                android:id="@+id/shoulder_day_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/shoulder_day"
+                android:layout_marginBottom="10dp"
+                android:onClick="@{() -> startFragment.goToMuscleGroup(@string/shoulder_day)}"/>
+
+            <Button
+                android:id="@+id/leg_day_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/leg_day"
+                android:layout_marginBottom="10dp"
+                android:onClick="@{() -> startFragment.goToMuscleGroup(@string/leg_day)}"/>
+
+            <!--    Primary Background image for the application -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/weight_linear"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/app_background_image"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

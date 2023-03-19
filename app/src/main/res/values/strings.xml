@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WorkoutLog</string>
+    <string name="pick_a_muscle_group">Pick a Muscle Group</string>
+    <string name="back_day">Back Day</string>
+    <string name="chest_day">Chest Day</string>
+    <string name="shoulder_day">Shoulder Day</string>
+    <string name="leg_day">Leg Day</string>
+    <string name="name">Name</string>
+    <string name="weight">Weight</string>
+    <string name="reps">Reps</string>
+    <string name="add_new_exercise">Add new exercise</string>
+    <string name="exercise">Exercise</string>
+    <string name="delete">Delete</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="exercise_name_required">Exercise Name Required.</string>
+    <string name="enter_exercise">Enter Exercise</string>
+    <string name="enter_reps">Enter Reps</string>
+    <string name="enter_weight">Enter Weight</string>
+    <string name="save">Save</string>
+    <string name="enter_muscle_group">Enter Muscle Group</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_background_image">App background image</string>
+</resources>
