@@ -11,9 +11,9 @@ Introduction
 This app aims to log exercises based categorized by there split day/muscle group.
 - Utilizes SQL queries to store exercises and their information in the Room database.
 - Navigation component for moving between fragments and setting arguments based on the desired split day.
-- ViewModel implementation with LiveData componentsto make changes to data that will be passed to the fragments.
+- ViewModel implementation with LiveData components to make changes to data that will be passed to the fragments.
 - Data variables initialized in the fragment layouts for direct fragment class function calls.
-- Recycler view with list adapter class to display the inoput exercises as a running list view.
+- Recycler view with list adapter class to display the given exercises as a running list view.
 
 Getting Started
 ---------------
